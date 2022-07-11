@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	background-color: white;
+	font-family: 'Jost', sans-serif;
+	font-size: 24px;
+	min-width: 300px;
+}
+
+p {
+	line-height: 28px;
+}
+
+.light-italic {
+	font-weight: 300;
+	font-style: italic;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	transition: padding-top 0.4s, box-shadow 0.4s;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+header.scrolled {
+    padding-top: 15px;
+	box-shadow: 0 0 15px #00000044;
+}
+
+header img {
+	transition: width 0.4s, height 0.4s;
+	width: 333px;
+	height: 104px;
+}
+
+header.scrolled img {
+	width: 200px;
+	height: 62px;
+}
+
+.section {
+	width: 100%;
+	padding: 20px calc((100% - 1280px) / 2);
+	background-repeat: no-repeat;
+}
+
+.light {
+	background-color: white;
+	color: #273584;
+}
+
+.dark {
+	color: white;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 70px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+#care {
+	font-family: 'EB Garamond', sans-serif;
+	font-size: 115px;
+	text-transform: lowercase;
+	font-weight: 800;
+	line-height: 70px;
+	color: #ec619f;
+}
+
+h2 {
+	font-family: 'EB Garamond', sans-serif;
+	text-transform: lowercase;
+	font-size: 70px;
+	font-weight: 800;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+#bambini {
+	margin-top: 149px; /* header size */
+	height: 377px;
+	background-image: url("images/bambini.png");
+    background-position: center center;
+	background-size: auto 100%;
+}
+
+#ideas {
+	background-color: #882e83;
+	background-image: url("images/bg.jpg");
+    background-position: center top;
+}
+
+#menti {
+	background-color: #882e83;
+	background-image: url("images/bg.jpg");
+    background-position: center center;
+}
+
+#precisione {
+	min-height: 824px;
+	background-color: #474747;
+	background-image: url("images/precisione.jpg");
+    background-size: auto 100%;
+	background-position: center center;
+}
+
+#precisione p {
+	width: 52%;
+}
+
+footer {
+	background-color: #393582;
+	background-image: url("images/bg.jpg");
+    background-position: center bottom;
+	text-align: center;
+	font-size: 18px;
+}
+
+footer img {
+	display: inline-block;
+	margin: 15px;
+	width: 214px;
+	height: 67px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+	.section {
+		padding: 20px 90px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.section {
+		padding: 20px 7%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.section {
+		padding: 15px 7%;
+	}
+
+	body {
+		font-size: 18px;
+	}
+
+	p {
+		line-height: 22px;
+	}
+
+	header {
+		padding-top: 15px !important;
+	}
+
+	header img {
+		width: 167px !important;
+		height: 52px !important;
+	}
+
+	#bambini {
+		margin-top: 87px; /* header size */
+		height: 200px;
+	}
+
+	h1, h2 {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+
+	#care {
+		font-size: 57px;
+		line-height: 35px;
+	}
+
+	#precisione p {
+		width: 75%;
+	}
+
+	footer {
+		font-size: 15px;
+	}
+
+	footer img {
+		width: 140px;
+		height: auto;
+	}
+}

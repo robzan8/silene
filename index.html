@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Silene</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Jost:ital,wght@0,400;0,700;1,300&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header class="section light">
+      <img src="images/logo.png">
+    </header>
+
+    <script>
+      var header;
+      document.addEventListener("scroll", () => {
+        if (!header) {
+          header = document.getElementsByTagName("header")[0];
+        }
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <div class="section light" id="bambini"></div>
+
+    <div class="section dark" id="ideas">
+      <h1>Ideas for <span id="care">Care</span></h1>
+      <p>
+        La Fondazione Silene sostiene l'innovazione attraverso la realizzazione di nuovi modelli
+        di assistenza e cura che si integrano con attività e progetti medico assistenziali
+        a supporto di aree geografiche di differente complessità economico-sociale.
+      </p>
+      <p>
+        L'acronimo CARE (Cura, Assistenza, Ricerca e Educazione) evidenzia inoltre l'aspetto educativo
+        e di formazione sanitaria rivolta alla popolazione e alle differenti professioni sanitarie.
+      </p>
+      <p>
+        La peculiarità della Mission della Fondazione Silene Ideas for CARE consiste nella
+        programmazione di attività che integrando l'aspetto educazionale e assistenziale,
+        favoriscono la realizzazione di progetti duraturi e integrati nel territorio.
+        Silene si rivolge a donne e uomini di tutte le età, stato sociale, provenienza geografica
+        e cultura e mette a disposizione di tutti strumenti per conoscere, crescere e condividere.
+      </p>
+    </div>
+
+    <div class="section light">
+      <h2 style="color: #c42b88;">Il Cuore</h2>
+      <p>
+        Il cuore di Silene è costituito dalla Commissione Scientifica, composta non solo da medici
+        e ricercatori, ma anche da esperti in ambiti non direttamente riconducibili a contesti medici e assistenziali.
+      </p>
+      <p>
+        La collaborazione internazionale con intellettuali esperti nel campo della comunicazione, della musica,
+        della matematica, della letteratura, della filosofia e dello sport permette, attraverso la condivisione
+        e la discussione, di sostenere la creazione di efficaci modelli di cura ed offrire gli strumenti culturali
+        necessari per la loro realizzazione.
+      </p>
+    </div>
+
+    <div class="section dark" id="menti">
+      <h2 style="color: #ec619f;">Le Menti</h2>
+      <p>
+        I componenti della Commissione Scientifica:
+      </p>
+      <p>
+        <b>Carlo Efisio Marras</b> - <span class="light-italic">Neurochirurgo Coordinatore della Commissione Scientifica della Fondazione Silene ideas for CARE</span><br>
+        <b>Albert Becker</b> - <span class="light-italic">Neuropatologo, Full Professor Università di Bonn - Germania</span><br>
+        <b>Giancarlo Ferrigno</b> - <span class="light-italic">Professore Ordinario di Bioingegneria Istituto Politecnico di Milano</span><br>
+        <b>Giuseppe Lauria</b> - <span class="light-italic">Professore Ordinario di Neurologia, Università di Milano, Direttore Scientifico Fondazione Istituto Neurologico C.Besta, Milano</span><br>
+        <b>Daniel Agbo Panzo</b> - <span class="light-italic">Direttore Dipartimento Chirurgia Pediatrica, Centro Ospedaliero Universitario di Conakry - Guinea Conakry</span><br>
+        <b>Maya El Hachem</b> - <span class="light-italic">Responsabile UOC di Dermatologia Pediatrica, Ospedale Pediatrico Bambino Gesù, IRCCS, Roma</span><br>
+        <b>Aurelio Secinaro</b> - <span class="light-italic">Responsabile dell'UOC Imaging Cardiovascolare Ospedale Pediatrico Bambino Gesù, IRCCS, Roma</span><br>
+        <b>Francesco Lioi</b> - <span class="light-italic">Specializzando in Neurochirurgia Università La Sapienza, Roma</span><br>
+        <b>Milena Pisu</b> - <span class="light-italic">Coordinatice Infermieristica, Dipartimento di Scienze Chirurgiche, Università degli Studi di Cagliari</span><br>
+        <b>Deepak Gupta</b> - <span class="light-italic">Full Professor di Neurochirurgia, All India Institute of Medical Sciences, New Delhi - India</span><br>
+        <b>Ilaria Pannacci</b> - <span class="light-italic">Coordinatore Infermieristico, Dipartimento Rianimazione e Chirurgia Ospedale Pediatrico Bambino Gesù, Roma</span><br>
+        <b>Daniela Zedda</b> - <span class="light-italic">Fotografa</span><br>
+        <b>Marcello Fois</b> - <span class="light-italic">Scrittore</span><br>
+        <b>Marco Lamanna</b> - <span class="light-italic">Ricercatore Facoltà di Teologia, Università di Lucerna - Svizzera</span><br>
+      </p>
+    </div>
+
+    <div class="section dark" id="precisione">
+      <h2>2022/2023 - la precisione</h2>
+      <p>
+        Il biennio 2022-2023 sarà dedicato al tema della Precisione che sarà affrontata e declinata
+        in tutti i suoi aspetti attraverso progetti scientifici e assistenziali, approfondimenti,
+        incontri e confronti in presenza e sul web.
+      </p>
+      <p>
+        La Fondazione Silene ideas for CARE nasce da un seme che se ben accudito potrà germogliare ovunque.
+      </p>
+    </div>
+
+    <footer class="section dark">
+      <img src="images/logo-neg.png">
+      <p class="light-italic">
+        Fondazione Silene Ideas for Care - Ente del Terzo Settore - Viale Liegi n. 10, 00198 Roma -
+        Codice fiscale e P.IVA 16222231009 - <a href="mailto:info@silenefoundation.org">info@silenefoundation.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
