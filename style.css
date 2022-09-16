@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Jost:ital,wght@0,400;0,700;1,300&display=swap');
+
 * {
 	box-sizing: border-box;
 }
@@ -27,25 +29,30 @@ p {
 header {
 	position: fixed;
 	top: 0;
-	transition: padding-top 0.4s, box-shadow 0.4s;
-	padding-top: 30px;
-	padding-bottom: 15px;
+	transition: box-shadow 0.4s;
+    padding-top: 30px !important;
+	padding-bottom: 30px !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header.scrolled {
-    padding-top: 15px;
 	box-shadow: 0 0 15px #00000044;
 }
 
 header img {
-	transition: width 0.4s, height 0.4s;
-	width: 333px;
-	height: 104px;
-}
-
-header.scrolled img {
 	width: 200px;
 	height: 62px;
+}
+
+nav {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+nav a {
+	margin-left: 50px;
 }
 
 .section {
