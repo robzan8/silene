@@ -128,6 +128,19 @@ h2 {
 	justify-content: center;
 }
 
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.reverse > div {
+	background: linear-gradient(to right, #c61480, #b02281);
+	color: white;
+}
+
+.reverse h2, .reverse .read-more {
+	color: #ec619f;
+}
+
 .arrow {
 	font-size: 23px;
 	line-height: 16px;
