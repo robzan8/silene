@@ -12,13 +12,15 @@ html, body {
 
 body {
 	background-color: white;
+	color: #29235c;
 	font-family: 'Jost', sans-serif;
-	font-size: 24px;
+	font-size: 16px;
 	min-width: 300px;
 }
 
 p {
-	line-height: 28px;
+	line-height: 22px;
+	text-align: justify;
 }
 
 .light-italic {
@@ -57,7 +59,7 @@ nav a {
 
 .section {
 	width: 100%;
-	padding: 20px calc((100% - 1280px) / 2);
+	padding: 30px calc((100% - 1280px) / 2);
 	background-repeat: no-repeat;
 }
 
@@ -72,36 +74,73 @@ nav a {
 
 h1 {
 	text-transform: uppercase;
-	font-size: 70px;
+	font-size: 56px;
 	font-weight: normal;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 #care {
 	font-family: 'EB Garamond', sans-serif;
-	font-size: 115px;
+	font-size: 92px;
 	text-transform: lowercase;
 	font-weight: 800;
-	line-height: 70px;
+	line-height: 56px;
 	color: #ec619f;
 }
 
 h2 {
 	font-family: 'EB Garamond', sans-serif;
 	text-transform: lowercase;
-	font-size: 70px;
+	font-size: 54px;
 	font-weight: 800;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
+	color: #c42a87;
 }
 
 #bambini {
-	margin-top: 149px; /* header size */
-	height: 377px;
+	margin-top: 170px; /* > header size */
+	height: 300px;
 	background-image: url("images/bambini.png");
     background-position: center center;
 	background-size: auto 100%;
+}
+
+.columns2 {
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+}
+
+.columns2 > img {
+	display: block;
+	width: 60%;
+	min-height: 620px;
+	object-fit: cover;
+}
+
+.columns2 > div {
+	width: 40%;
+	padding: 95px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.arrow {
+	font-size: 23px;
+	line-height: 16px;
+}
+
+.read-more {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	color: #c42a87;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #ideas {
@@ -150,7 +189,7 @@ footer a {
 
 @media screen and (max-width: 1440px) {
 	.section {
-		padding: 20px 90px;
+		padding: 30px 90px;
 	}
 }
 
