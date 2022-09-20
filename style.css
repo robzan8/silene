@@ -31,6 +31,8 @@ p {
 header {
 	position: fixed;
 	top: 0;
+	width: 100%;
+	background-color: white;
 	transition: box-shadow 0.4s;
     padding-top: 30px !important;
 	padding-bottom: 30px !important;
@@ -44,8 +46,7 @@ header.scrolled {
 }
 
 header img {
-	width: 200px;
-	height: 62px;
+	width: 176px;
 }
 
 nav {
@@ -57,19 +58,8 @@ nav a {
 	margin-left: 50px;
 }
 
-.section {
-	width: 100%;
+.content-pad {
 	padding: 30px calc((100% - 1280px) / 2);
-	background-repeat: no-repeat;
-}
-
-.light {
-	background-color: white;
-	color: #273584;
-}
-
-.dark {
-	color: white;
 }
 
 h1 {
@@ -104,6 +94,14 @@ h2 {
 	background-image: url("images/bambini.png");
     background-position: center center;
 	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+#ideas {
+	background-color: #882e83;
+	background-image: url("images/bg.jpg");
+    background-position: center top;
+	color: white;
 }
 
 .columns2 {
@@ -156,30 +154,6 @@ h2 {
 	text-decoration: none;
 }
 
-#ideas {
-	background-color: #882e83;
-	background-image: url("images/bg.jpg");
-    background-position: center top;
-}
-
-#menti {
-	background-color: #882e83;
-	background-image: url("images/bg.jpg");
-    background-position: center center;
-}
-
-#precisione {
-	min-height: 824px;
-	background-color: #474747;
-	background-image: url("images/precisione.jpg");
-    background-size: auto 100%;
-	background-position: center center;
-}
-
-#precisione p {
-	width: 52%;
-}
-
 footer {
 	background-color: #393582;
 	background-image: url("images/bg.jpg");
@@ -201,19 +175,19 @@ footer a {
 }
 
 @media screen and (max-width: 1440px) {
-	.section {
+	.content-pad {
 		padding: 30px 90px;
 	}
 }
 
 @media screen and (max-width: 1000px) {
-	.section {
+	.content-pad {
 		padding: 20px 7%;
 	}
 }
 
 @media screen and (max-width: 650px) {
-	.section {
+	.content-pad {
 		padding: 15px 7%;
 	}
 
@@ -247,10 +221,6 @@ footer a {
 	#care {
 		font-size: 57px;
 		line-height: 35px;
-	}
-
-	#precisione p {
-		width: 75%;
 	}
 
 	footer {
