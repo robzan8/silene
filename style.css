@@ -91,7 +91,6 @@ h1 {
 
 h2 {
 	font-family: 'EB Garamond', sans-serif;
-	text-transform: lowercase;
 	font-size: 54px;
 	font-weight: 800;
 	margin: 0;
@@ -147,6 +146,7 @@ h2 {
 }
 
 .read-more {
+	margin-top: 10px;
 	display: inline-block;
 	width: 100%;
 	text-align: right;
