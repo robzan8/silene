@@ -161,6 +161,10 @@ h2 {
 	background-repeat: no-repeat;
 }
 
+#bottom > img {
+	width: 176px;
+}
+
 #newsGrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -189,6 +193,7 @@ h2 {
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	padding: 14px;
+	overflow: hidden;
 }
 
 .news-text b {
@@ -214,6 +219,72 @@ h2 {
 	text-transform: uppercase;
 	padding: 9px 23px;
 	border-radius: 10px;
+}
+
+footer {
+	margin-top: 20px;
+	color: white;
+	font-size: 14px;
+	display: grid;
+	grid-template-columns: 3fr 1px 2fr 1px 2fr 1px 3fr;
+	gap: 60px;
+}
+
+footer hr {
+	border: 0;
+	border-right: 1px solid white;
+}
+
+footer img {
+	display: inline-block;
+	height: 27px;
+	margin-top: 30px;
+	margin-right: 35px;
+}
+
+footer form {
+	width: 100%;
+	max-width: 240px;
+	margin-top: 20px;
+	border-radius: 11px;
+	background-color: white;
+	display: flex;
+	justify-content: stretch;
+}
+
+footer input {
+	font-family: 'Jost', sans-serif;
+	font-size: 14px;
+	border: none;
+	padding: 5px 8px;
+}
+
+footer input::placeholder {
+	color: #a5a4a4;
+}
+
+footer input:first-child {
+	width: calc(100% - 80px);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+footer input:last-child {
+	width: 80px;
+	border-radius: 10px;
+	background-color: #a6a5a5;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#copyright {
+	color: white;
+	font-size: 14px;
+	margin-top: 35px;
+	margin-bottom: 150px;
+	display: flex;
+	justify-content: space-between;
 }
 
 @media screen and (max-width: 1440px) {
