@@ -112,14 +112,16 @@ h2 {
 
 .columns2 > img {
 	display: block;
-	width: 60%;
+	width: calc((100% - 1280px) / 2 + 1280px * 0.6); /* content-pad + 60% */
 	min-height: 620px;
+	max-height: 760px;
 	object-fit: cover;
 }
 
 .columns2 > div {
-	width: 40%;
+	width: calc((100% - 1280px) / 2 + 1280px * 0.4); /* content-pad + 40% */
 	padding: 95px;
+	padding-right: calc((100% - 1280px) / 2);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -132,6 +134,8 @@ h2 {
 .reverse > div {
 	background: linear-gradient(to right, #c61480, #b02281);
 	color: white;
+	padding-right: 95px;
+	padding-left: calc((100% - 1280px) / 2);
 }
 
 .reverse h2, .reverse .read-more, #bottom h2 {
@@ -289,7 +293,16 @@ footer input:last-child {
 
 @media screen and (max-width: 1440px) {
 	.content-pad {
-		padding: 30px 90px;
+		padding: 30px 95px;
+	}
+
+	.columns2 > div {
+		padding-left: 95px;
+		padding-right: 95px;
+	}
+
+	.columns2 > img {
+		max-height: unset;
 	}
 }
 
