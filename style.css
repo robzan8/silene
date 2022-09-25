@@ -11,8 +11,11 @@ html, body {
 }
 
 body {
-	background-color: white;
-	color: #29235c;
+	background-color: #a02882;
+	background-image: url("images/bg.jpg");
+	background-position: top 450px center;
+	background-repeat: no-repeat;
+	color: white;
 	font-family: 'Jost', sans-serif;
 	font-size: 16px;
 	min-width: 300px;
@@ -33,6 +36,7 @@ header {
 	top: 0;
 	width: 100%;
 	background-color: white;
+	color: #29235c;
 	transition: box-shadow 0.4s;
     padding-top: 30px !important;
 	padding-bottom: 30px !important;
@@ -89,19 +93,12 @@ h2 {
 }
 
 #bambini {
-	margin-top: 170px; /* > header size */
-	height: 300px;
+	height: 470px; /* 300 + space for header */
+	background-color: white;
 	background-image: url("images/bambini.png");
-    background-position: center center;
-	background-size: auto 100%;
+    background-position: bottom center;
+	background-size: auto 300px;
 	background-repeat: no-repeat;
-}
-
-#ideas {
-	background-color: #882e83;
-	background-image: url("images/bg.jpg");
-    background-position: center top;
-	color: white;
 }
 
 .columns2 {
@@ -119,6 +116,8 @@ h2 {
 }
 
 .columns2 > div {
+	background-color: white;
+	color: #29235c;
 	width: calc((100% - 1280px) / 2 + 1280px * 0.4); /* content-pad + 40% */
 	padding: 95px;
 	padding-right: calc((100% - 1280px) / 2);
@@ -132,7 +131,7 @@ h2 {
 }
 
 .reverse > div {
-	background: linear-gradient(to right, #c61480, #b02281);
+	background-color: transparent;
 	color: white;
 	padding-right: 95px;
 	padding-left: calc((100% - 1280px) / 2);
@@ -156,13 +155,6 @@ h2 {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-decoration: none;
-}
-
-#bottom {
-	background-color: #393582;
-	background-image: url("images/bg.jpg");
-    background-position: center bottom;
-	background-repeat: no-repeat;
 }
 
 #bottom > img {
@@ -194,6 +186,7 @@ h2 {
 	width: 100%;
 	height: 180px;
 	background-color: white;
+	color: #29235c;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	padding: 14px;
@@ -227,7 +220,6 @@ h2 {
 
 footer {
 	margin-top: 20px;
-	color: white;
 	font-size: 14px;
 	display: grid;
 	grid-template-columns: 3fr 1px 2fr 1px 2fr 1px 3fr;
@@ -283,7 +275,6 @@ footer input:last-child {
 }
 
 #copyright {
-	color: white;
 	font-size: 14px;
 	margin-top: 35px;
 	margin-bottom: 150px;
@@ -335,8 +326,7 @@ footer input:last-child {
 	}
 
 	#bambini {
-		margin-top: 87px; /* header size */
-		height: 200px;
+		height: 387px; /* 300 + space for header */
 	}
 
 	h1, h2 {
