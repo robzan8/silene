@@ -35,6 +35,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 115px;
 	background-color: white;
 	color: #29235c;
 	transition: box-shadow 0.4s;
@@ -51,6 +52,10 @@ header.scrolled {
 
 header img {
 	width: 176px;
+}
+
+#headerSpace {
+	height: 115px;
 }
 
 nav {
@@ -93,7 +98,7 @@ h2 {
 }
 
 #bambini {
-	height: 470px; /* 300 + space for header */
+	height: 355px;
 	background-color: white;
 	background-image: url("images/bambini.png");
     background-position: bottom center;
@@ -325,8 +330,13 @@ footer input:last-child {
 		height: 52px !important;
 	}
 
+	#headerSpace {
+		height: 97px;
+	}
+
 	#bambini {
-		height: 387px; /* 300 + space for header */
+		height: 272px;
+		background-size: auto 240px;
 	}
 
 	h1, h2 {
