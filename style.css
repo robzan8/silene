@@ -101,6 +101,36 @@ h2 {
 	background-repeat: no-repeat;
 }
 
+#precisione {
+	height: 620px;
+	background-color: #484747;
+	background-image: url("images/precisione.jpg");
+	background-position: center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#precisione h2 {
+	color: white;
+}
+
+#precisione h2, #precisione p {
+	width: 360px;
+}
+
+#progetti {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#progetti a {
+	font-size: 21px;
+	text-decoration: none;
+}
+
 .columns2 {
 	width: 100%;
 	display: flex;
@@ -137,7 +167,7 @@ h2 {
 	padding-left: calc((100% - 1280px) / 2);
 }
 
-.reverse h2, .reverse .read-more, #bottom h2 {
+.reverse h2, .reverse .read-more, #progetti h2, #bottom h2, #progetti a {
 	color: #ec619f;
 }
 
