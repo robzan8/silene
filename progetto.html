@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <title>Silene - Heart and Brain</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header class="content-pad">
+      <img src="images/logo.png"/>
+      <nav>
+        <a>La Fondazione</a>
+        <a>Progetti</a>
+        <a>Sostieni Silene</a>
+        <a>Talk</a>
+      </nav>
+    </header>
+
+    <script>
+      var header;
+      document.addEventListener("scroll", () => {
+        if (!header) {
+          header = document.getElementsByTagName("header")[0];
+        }
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <div class="columns2 small-img">
+      <img src="images/h-b.jpg"/>
+      <div>
+        <img src="images/h-b-logo.svg" id="hbLogo"/>
+        <p>
+          Il concetto di assistenza medica ha subito una trasformazione radicale dall'inizio del secolo.
+          Il crescente interesse per la cosiddetta "medicina di precisione" sta spingendo la ricerca moderna verso
+          approcci innovativi e soluzioni create su misura per i singoli pazienti. Guardando a questo orizzonte
+          il progetto Heart&Brain, incentrato sulla neurochirurgia e sulla chirurgia cardio-toracica,
+          vuole promuovere e sviluppare una rete internazionale a supporto dell'assistenza e dell'istruzione scientifica.
+          <br/>
+          Le tecniche di imaging avanzato e le tecnologie di realtà virtuale permettono la costruzione di un nuovo modello
+          di pianificazione chirurgica e formazione: un modello che si basa sulla condivisione delle conoscenze
+          all'interno di un network che coinvolge Centri appartenenti ad aree geografiche culturalmente eterogenee.
+          <br/>
+          Il progetto, supportato da una rete multidisciplinare dedicata, genererà un nuovo modo di interpretare
+          il concetto di cura. In particolare, sosterrà lo sviluppo di piccoli Centri con risorse economiche limitate,
+          consentendo a Centri con maggiore know-how di diffondere percorsi assistenziali e di istruzione innovativi.
+        </p>
+        <a class="button">Scarica la presentazione</a>
+      </div>
+    </div>
+
+    <div class="content-pad" id="progetti">
+      <h2>i progetti in corso</h2>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+        sed quia consequuntur magni.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+        Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+      </p>
+      <a>Altri progetti</a>
+    </div>
+
+    <div class="columns2 reverse">
+      <img src="images/burkina.jpg"/>
+      <div>
+        <h2>Burkina Faso</h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </p>
+        <a class="read-more"><span class="arrow">►</span> Leggi di più</a>
+        <a class="button">Scarica la presentazione</a>
+      </div>
+    </div>
+
+    <div class="columns2">
+      <img src="images/lorem.jpg"/>
+      <div>
+        <h2>lorem ipsum</h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+          Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+          sed quia consequuntur magni. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+          Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+          totam rem aperiam.
+        </p>
+        <a class="read-more"><span class="arrow">►</span> Leggi di più</a>
+        <a class="button">Scarica la presentazione</a>
+      </div>
+    </div>
+
+    <div id="bottom" class="content-pad">
+      <h2>talk</h2>
+      <div id="newsGrid">
+        <a>
+          <img src="images/news.jpg"/>
+          <div class="news-text">
+            <b>Lorem ipsum sit amet</b>
+            <span>
+              Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            </span>
+          </div>
+        </a>
+        <a>
+          <img src="images/news.jpg"/>
+          <div class="news-text">
+            <b>Lorem ipsum sit amet</b>
+            <span>
+              Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            </span>
+          </div>
+        </a>
+        <a>
+          <img src="images/news.jpg"/>
+          <div class="news-text">
+            <b>Lorem ipsum sit amet</b>
+            <span>
+              Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            </span>
+          </div>
+        </a>
+        <a>
+          <img src="images/news.jpg"/>
+          <div class="news-text">
+            <b>Lorem ipsum sit amet</b>
+            <span>
+              Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div id="otherNews">
+        <a>Leggi altre notizie</a>
+      </div>
+
+      <img src="images/logo-neg.png"/>
+
+      <footer>
+        <div>
+          FONDAZIONE SILENE IDEAS FOR CARE<br/>
+          Ente del Terzo Settore<br/>
+          Codice fiscale e P. IVA 16222231009<br/>
+          Viale Gorizia 52, 00198 Roma<br/>
+          T +39 06 20192785 - info@silenefoundation.org<br/>
+          <img src="images/linkedin.png"/>
+          <img src="images/twitter.png"/>
+          <img src="images/facebook.png"/>
+          <img src="images/instagram.png" style="margin-right: 0;"/>
+        </div>
+        <hr/>
+        <div>
+          SU SILENE<br/>
+          Soci fondatori<br/>
+          Cariche sociali<br/>
+          Bilanci<br/>
+          Statuto<br/>
+          Carriere
+        </div>
+        <hr/>
+        <div>
+          DA SILENE<br/>
+          HOME<br/>
+          LA FONDAZIONE<br/>
+          PROGETTI<br/>
+          SOSTIENI SILENE<br/>
+          TALK
+        </div>
+        <hr/>
+        <div>
+          CON SILENE<br/>
+          Iscriviti alla nostra newsletter<br/>
+          <form enctype="multipart/form-data" action="/subscribe" method="post">
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="submit" value="Iscriviti">
+          </form>
+        </div>
+      </footer>
+
+      <div id="copyright">
+        <span>Termini e condizioni - Cookie law</span>
+        <span>© Silene Foundation | All rights reserved</span>
+      </div>
+    </div>
+  </body>
+</html>

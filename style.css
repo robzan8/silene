@@ -178,6 +178,14 @@ h2 {
 	color: #ec619f;
 }
 
+.small-img > img {
+	width: calc((100% - 1280px) / 2 + 1280px * 0.4); /* content-pad + 40% */
+}
+
+.small-img > div {
+	width: calc((100% - 1280px) / 2 + 1280px * 0.6); /* content-pad + 60% */
+}
+
 .arrow {
 	font-size: 23px;
 	line-height: 16px;
@@ -185,7 +193,6 @@ h2 {
 
 .read-more {
 	margin-top: 10px;
-	margin-bottom: 28px;
 	display: block;
 	width: 100%;
 	text-align: right;
@@ -196,6 +203,7 @@ h2 {
 }
 
 a.button {
+	margin-top: 28px;
 	background: linear-gradient(to right, #ec008c, #25408f);
 	color: white;
 	font-size: 16px;
