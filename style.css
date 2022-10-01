@@ -35,8 +35,14 @@ a {
 	font-style: italic;
 }
 
+.content-pad {
+	padding: 40px calc((100% - 1280px) / 2);
+}
+
 header {
 	position: sticky;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
 	top: 0;
 	width: 100%;
 	background-color: white;
@@ -62,10 +68,6 @@ nav {
 
 nav a {
 	margin-left: 50px;
-}
-
-.content-pad {
-	padding: 30px calc((100% - 1280px) / 2);
 }
 
 h1 {
