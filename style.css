@@ -13,7 +13,7 @@ html, body {
 body {
 	background-color: #a02882;
 	background-image: url("images/bg.jpg");
-	background-position: top 450px center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	color: white;
 	font-family: 'Jost', sans-serif;
@@ -24,6 +24,10 @@ body {
 p {
 	line-height: 22px;
 	text-align: justify;
+}
+
+a {
+	text-decoration: none;
 }
 
 .light-italic {
@@ -38,8 +42,6 @@ header {
 	background-color: white;
 	color: #29235c;
 	transition: box-shadow 0.4s;
-    padding-top: 30px !important;
-	padding-bottom: 30px !important;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -89,7 +91,7 @@ h2 {
 	font-weight: 800;
 	margin: 0;
 	margin-bottom: 60px;
-	color: #c42a87;
+	color: #ec619f;
 }
 
 #bambini {
@@ -121,22 +123,6 @@ h2 {
 	width: 360px;
 }
 
-#progetti {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-#progetti a {
-	font-size: 21px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-#hbLogo {
-	margin-bottom: 25px;
-	max-width: 100%;
-}
-
 .columns2 {
 	width: 100%;
 	display: flex;
@@ -152,15 +138,23 @@ h2 {
 }
 
 .columns2 > div {
-	background-color: white;
-	color: #29235c;
 	width: calc((100% - 1280px) / 2 + 1280px * 0.4); /* content-pad + 40% */
 	padding: 95px;
-	padding-right: calc((100% - 1280px) / 2);
+	padding-left: calc((100% - 1280px) / 2);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+}
+
+.read-more {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	text-align: right;
+	color: #ec619f;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .reverse {
@@ -168,14 +162,14 @@ h2 {
 }
 
 .reverse > div {
-	background-color: transparent;
-	color: white;
-	padding-right: 95px;
-	padding-left: calc((100% - 1280px) / 2);
+	background-color: white;
+	color: #29235c;
+	padding-left: 95px;
+	padding-right: calc((100% - 1280px) / 2);
 }
 
-.reverse h2, .reverse .read-more, #progetti h2, #bottom h2, #progetti a {
-	color: #ec619f;
+.reverse h2, .reverse .read-more {
+	color: #c42a87;
 }
 
 .small-img > img {
@@ -191,17 +185,6 @@ h2 {
 	line-height: 16px;
 }
 
-.read-more {
-	margin-top: 10px;
-	display: block;
-	width: 100%;
-	text-align: right;
-	color: #c42a87;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-decoration: none;
-}
-
 a.button {
 	margin-top: 28px;
 	background: linear-gradient(to right, #ec008c, #25408f);
@@ -209,13 +192,27 @@ a.button {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-decoration: none;
 	padding: 10px 13px;
 	border-radius: 10px;
 	border: 1px solid white;
 }
 
-#bottom > img {
+#otherProjects {
+	font-size: 21px;
+	text-transform: uppercase;
+	color: #ec619f;
+}
+
+#hbLogo {
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+
+#hbBackground {
+	width: 60%;
+}
+
+#bottomLogo {
 	width: 176px;
 }
 
@@ -227,7 +224,6 @@ a.button {
 
 #newsGrid > a {
 	display: block;
-	text-decoration: none;
 	height: 360px;
 }
 
@@ -272,7 +268,6 @@ a.button {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-decoration: none;
 	padding: 9px 23px;
 	border-radius: 10px;
 }
