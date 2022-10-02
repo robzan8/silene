@@ -161,11 +161,11 @@ h2 {
 
 .reverse {
 	flex-direction: row-reverse;
+	background-color: white;
+	color: #29235c;
 }
 
 .reverse > div {
-	background-color: white;
-	color: #29235c;
 	padding-left: 95px;
 	padding-right: calc((100% - 1280px) / 2);
 }
