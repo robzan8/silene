@@ -188,6 +188,7 @@ h2 {
 }
 
 a.button {
+	display: inline-block;
 	margin-top: 28px;
 	background: linear-gradient(to right, #ec008c, #25408f);
 	color: white;
@@ -227,6 +228,8 @@ a.button {
 #newsGrid > a {
 	display: block;
 	height: 360px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 
 #newsGrid img {
@@ -234,8 +237,16 @@ a.button {
 	width: 100%;
 	height: 180px;
 	object-fit: cover;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+}
+
+.white-news {
+	background-color: white;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.white-news > a {
+	border: 1px solid #c42a87;
 }
 
 .news-text {
@@ -243,8 +254,6 @@ a.button {
 	height: 180px;
 	background-color: white;
 	color: #29235c;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
 	padding: 14px;
 	overflow: hidden;
 }
