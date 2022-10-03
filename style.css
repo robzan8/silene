@@ -61,6 +61,10 @@ header img {
 	width: 176px;
 }
 
+header a {
+	color: #29235c;
+}
+
 nav {
 	font-size: 16px;
 	text-transform: uppercase;
