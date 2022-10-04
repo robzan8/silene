@@ -146,36 +146,29 @@ h2 {
 .columns2 > div {
 	width: calc((100% - 1280px) / 2 + 1280px * 0.4); /* content-pad + 40% */
 	padding: 40px 95px;
-	padding-left: calc((100% - 1280px) / 2);
+	padding-right: calc((100% - 1280px) / 2);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 }
 
-.read-more {
-	margin-top: 10px;
-	display: block;
-	width: 100%;
-	text-align: right;
-	color: #ec619f;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.reverse {
-	flex-direction: row-reverse;
+.white-text {
 	background-color: white;
 	color: #29235c;
 }
 
-.reverse > div {
-	padding-left: 95px;
-	padding-right: calc((100% - 1280px) / 2);
+.white-text h2, .white-text .read-more {
+	color: #c42a87;
 }
 
-.reverse h2, .reverse .read-more {
-	color: #c42a87;
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.reverse > div {
+	padding-right: 95px;
+	padding-left: calc((100% - 1280px) / 2);
 }
 
 .small-img > img {
@@ -189,6 +182,16 @@ h2 {
 .arrow {
 	font-size: 23px;
 	line-height: 16px;
+}
+
+.read-more {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	text-align: right;
+	color: #ec619f;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 a.button {
