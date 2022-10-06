@@ -220,12 +220,15 @@ a.button {
 
 #facce {
 	margin: 50px 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 90px;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 70px;
 }
 
 #facce > div {
+	width: 330px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -273,7 +276,6 @@ a.button {
 #newsFlex > a {
 	display: block;
 	width: 240px;
-	height: 360px;
 	border-radius: 15px;
 	overflow: hidden;
 }
@@ -297,7 +299,7 @@ a.button {
 
 .news-text {
 	width: 100%;
-	height: 180px;
+	min-height: 180px;
 	background-color: white;
 	color: #29235c;
 	padding: 14px;
