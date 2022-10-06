@@ -262,20 +262,23 @@ a.button {
 	width: 176px;
 }
 
-#newsGrid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 90px;
+#newsFlex {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 60px;
 }
 
-#newsGrid > a {
+#newsFlex > a {
 	display: block;
+	width: 240px;
 	height: 360px;
 	border-radius: 15px;
 	overflow: hidden;
 }
 
-#newsGrid img {
+#newsFlex img {
 	display: block;
 	width: 100%;
 	height: 180px;
@@ -284,8 +287,8 @@ a.button {
 
 .white-news {
 	background-color: white;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 70px !important;
+	padding-bottom: 70px !important;
 }
 
 .white-news > a {
@@ -462,8 +465,13 @@ footer input:last-child {
 		width: 150px;
 	}
 
-	h1, h2 {
+	h1 {
 		font-size: 35px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 37px;
 		margin-bottom: 20px;
 	}
 
