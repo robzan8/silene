@@ -413,9 +413,17 @@ footer input:last-child {
 	.small-img > div {
 		width: 55%;
 	}
+
+	footer {
+		gap: 35px;
+	}
 }
 
 @media screen and (max-width: 1060px) {
+	nav {
+		display: none;
+	}
+
 	.content-pad {
 		padding: 30px 60px;
 	}
@@ -428,6 +436,15 @@ footer input:last-child {
 		padding-left: 60px;
 		padding-right: 60px;
 		width: 55%;
+	}
+
+	footer {
+		grid-template-columns: 1fr 1px 1fr;
+		gap: 60px;
+	}
+
+	footer hr:nth-child(4) {
+		display: none;
 	}
 }
 
@@ -442,7 +459,7 @@ footer input:last-child {
 	}
 
 	header img {
-		width: 130px;
+		width: 150px;
 	}
 
 	h1, h2 {
@@ -469,5 +486,21 @@ footer input:last-child {
 		width: 100%;
 		padding-left: 7%;
 		padding-right: 7%;
+	}
+
+	footer {
+		grid-template-columns: 1fr;
+		gap: 25px;
+	}
+
+	footer hr {
+		display: block !important;
+		width: 100%;
+		border-right: 0;
+		border-bottom: 1px solid white;
+	}
+
+	#copyright {
+		flex-direction: column;
 	}
 }
