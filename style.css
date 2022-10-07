@@ -317,7 +317,7 @@ a.button {
 }
 
 #otherNews {
-	margin: 80px;
+	margin: 80px 0;
 	text-align: center;
 }
 
@@ -473,7 +473,7 @@ footer input:last-child {
 	}
 
 	h2 {
-		font-size: 37px;
+		font-size: 39px;
 		margin-bottom: 20px;
 	}
 
@@ -496,6 +496,10 @@ footer input:last-child {
 		width: 100%;
 		padding-left: 7%;
 		padding-right: 7%;
+	}
+
+	#otherNews a {
+		font-size: 16px;
 	}
 
 	footer {
