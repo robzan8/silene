@@ -507,6 +507,10 @@ footer input:last-child {
 		width: 77%;
 	}
 
+	#hbBackground {
+		width: 100%;
+	}
+
 	#otherNews a {
 		font-size: 16px;
 	}
