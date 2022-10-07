@@ -121,7 +121,7 @@ h2 {
 }
 
 #precisione h2, #precisione p {
-	width: 360px;
+	max-width: 360px;
 }
 
 .columns2 {
@@ -496,6 +496,15 @@ footer input:last-child {
 		width: 100%;
 		padding-left: 7%;
 		padding-right: 7%;
+	}
+
+	#precisione {
+		justify-content: flex-start;
+		background-image: url("images/precisione800.jpg");
+	}
+
+	#precisione h2, #precisione p {
+		width: 77%;
 	}
 
 	#otherNews a {
