@@ -455,7 +455,7 @@ footer input:last-child {
 
 @media screen and (max-width: 800px) {
 	.content-pad {
-		padding: 15px 7%;
+		padding: 30px 7%;
 	}
 
 	header {
