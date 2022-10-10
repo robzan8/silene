@@ -11,6 +11,7 @@ html, body {
 }
 
 body {
+	position: relative;
 	background-color: #a02882;
 	background-image: url("images/bg.jpg");
 	background-position: top center;
@@ -52,12 +53,8 @@ header.scrolled {
 	box-shadow: 0 0 15px #00000044;
 }
 
-header img {
+header img:first-child {
 	width: 176px;
-}
-
-header a {
-	color: #29235c;
 }
 
 nav {
@@ -66,7 +63,41 @@ nav {
 }
 
 nav a {
+	color: #29235c;
+}
+
+header nav a {
 	margin-left: 50px;
+}
+
+#hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+#mobileMenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+	background-color: white;
+	z-index: 1000;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#mobileMenu nav {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+#mobileMenu.visible {
+	opacity: 1;
+	pointer-events: all;
 }
 
 h1 {
@@ -425,8 +456,12 @@ footer input:last-child {
 }
 
 @media screen and (max-width: 1060px) {
-	nav {
+	header nav {
 		display: none;
+	}
+
+	#hamburger {
+		display: block;
 	}
 
 	.content-pad {
@@ -463,7 +498,7 @@ footer input:last-child {
 		padding-bottom: 15px !important;
 	}
 
-	header img {
+	header img:first-child {
 		width: 150px;
 	}
 

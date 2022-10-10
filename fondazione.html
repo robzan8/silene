@@ -8,7 +8,7 @@
 
   <body>
     <header class="content-pad">
-      <a href="/"><img src="images/logo.png"/></a>
+      <img src="images/logo.png"/>
       <nav>
         <a href="/">Home</a>
         <a href="/fondazione.html">La Fondazione</a>
@@ -16,7 +16,26 @@
         <a>Sostieni Silene</a>
         <a>Talk</a>
       </nav>
+      <img id="hamburger" src="images/hamburger.svg"
+        onclick="document.getElementById('mobileMenu').classList.add('visible')"
+      />
     </header>
+
+    <div id="mobileMenu">
+      <header class="content-pad">
+        <img src="images/logo.png"/>
+        <img src="images/close.svg"
+          onclick="document.getElementById('mobileMenu').classList.remove('visible')"
+        />
+      </header>
+      <nav class="content-pad">
+        <a href="/">Home</a>
+        <a href="/fondazione.html">La Fondazione</a>
+        <a href="/progetti.html">Progetti</a>
+        <a>Sostieni Silene</a>
+        <a>Talk</a>
+      </nav>
+    </div>
 
     <script>
       var header;
