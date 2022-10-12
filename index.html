@@ -49,14 +49,29 @@
           header.classList.remove("scrolled");
         }
       });
+      
+      document.body.onload = () => {
+        const dx = 1280;
+        const bambini = document.getElementById("bambiniImage");
+        bambini.style.left = "0px";
+        function slideLeft() {
+          let left = Number(bambini.style.left.slice(0, -2));
+          if (left <= -4*dx) {
+            return;
+          }
+          left -= dx;
+          bambini.style.left = left + "px";
+          setTimeout(slideLeft, 6000);
+        }
+        setTimeout(slideLeft, 3000);
+      }
     </script>
 
-    <div id="bambiniContainer">
-      <div id="bambiniWindow">
-        <div></div>
-        <img src="images/bambini.png"/>
-        <div></div>
+    <div id="bambini">
+      <div id="bambiniContainer">
+        <img id="bambiniImage" src="images/bambini.png"/>
       </div>
+      <div id="bambiniMask"></div>
     </div>
 
     <div class="content-pad">
