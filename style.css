@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Jost:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&family=Jost:ital,wght@0,400;0,700;1,300&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 	color: white;
 	font-family: 'Jost', sans-serif;
 	font-size: 16px;
-	min-width: 300px;
+	min-width: 350px;
 }
 
 p {
@@ -82,7 +82,7 @@ header nav a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	min-width: 300px;
+	min-width: 350px;
 	background-color: white;
 	z-index: 10000;
 	opacity: 0;
@@ -151,7 +151,7 @@ h1 {
 	margin-bottom: 35px;
 }
 
-#care {
+.care {
 	font-family: 'EB Garamond', sans-serif;
 	font-size: 92px;
 	text-transform: lowercase;
@@ -167,6 +167,35 @@ h2 {
 	margin: 0;
 	margin-bottom: 60px;
 	color: #ec619f;
+}
+
+h3 {
+	font-family: 'EB Garamond', sans-serif;
+	font-size: 57px;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#ideas {
+	position: relative;
+	overflow: hidden;
+}
+
+#textSpacing {
+	opacity: 0;
+	user-select: none;
+}
+
+#textSlides {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1000%;
+}
+
+#textSlides > div {
+	height: 20%;
 }
 
 #precisione {
@@ -267,10 +296,12 @@ a.button {
 	border: 1px solid white;
 }
 
-#otherProjects {
+.uppercase {
+	display: inline-block;
 	font-size: 21px;
 	text-transform: uppercase;
-	color: #ec619f;
+	margin-bottom: 6px;
+	text-align: left;
 }
 
 #hbLogo {
@@ -550,9 +581,18 @@ footer input:last-child {
 		margin-bottom: 20px;
 	}
 
-	#care {
+	h3 {
+		margin-top: 10px;
+		font-size: 40px;
+	}
+
+	.care {
 		font-size: 57px;
 		line-height: 35px;
+	}
+
+	.uppercase {
+		font-size: 18px;
 	}
 
 	.columns2 {
