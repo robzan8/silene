@@ -123,7 +123,10 @@ header nav a {
 	height: 300px;
 	left: 0;
 	z-index: 1;
-	transition: left 2s;
+	animation-name: slideLeft;
+	animation-duration: 20s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
 }
 
 #bambiniMask {
@@ -187,15 +190,77 @@ h3 {
 	user-select: none;
 }
 
-#textSlides {
+#titlesSlides, #textSlides {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 1000%;
+	height: 750%;
+	animation-name: slideUp, fadeOutIn;
+	animation-duration: 20s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
 }
 
-#textSlides > div {
+#titlesSlides > div, #textSlides > div {
 	height: 20%;
+}
+
+#titlesSlides p, #textSlides h1, #textSlides h3, #textSlides span.care {
+	opacity: 0;
+	user-select: none;
+}
+
+#textSlides {
+	animation-delay: 0.3s;
+}
+
+@keyframes slideLeft {
+	0% { left: calc(0 * -1280px) }
+   10% { left: calc(0 * -1280px) }
+   20% { left: calc(1 * -1280px) }
+   30% { left: calc(1 * -1280px) }
+   40% { left: calc(2 * -1280px) }
+   50% { left: calc(2 * -1280px) }
+   60% { left: calc(3 * -1280px) }
+   70% { left: calc(3 * -1280px) }
+   80% { left: calc(4 * -1280px) }
+   90% { left: calc(4 * -1280px) }
+  100% { left: calc(4 * -1280px) }
+}
+
+@keyframes slideUp {
+	  0% { top:    0%; }
+	 10% { top:    0%; }
+	 20% { top: -150%; }
+	 30% { top: -150%; }
+	 40% { top: -300%; }
+	 50% { top: -300%; }
+	 60% { top: -450%; }
+	 70% { top: -450%; }
+	 80% { top: -600%; }
+	 90% { top: -600%; }
+	100% { top: -600%; }
+}
+
+@keyframes fadeOutIn {
+	  0% { opacity: 1; }
+	 10% { opacity: 1; }
+	 13% { opacity: 0; }
+	 17% { opacity: 0; }
+	 20% { opacity: 1; }
+	 30% { opacity: 1; }
+	 33% { opacity: 0; }
+	 37% { opacity: 0; }
+	 40% { opacity: 1; }
+	 50% { opacity: 1; }
+	 53% { opacity: 0; }
+	 57% { opacity: 0; }
+	 60% { opacity: 1; }
+	 70% { opacity: 1; }
+	 73% { opacity: 0; }
+	 77% { opacity: 0; }
+	 80% { opacity: 1; }
+	100% { opacity: 1; }
 }
 
 #precisione {
