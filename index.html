@@ -52,6 +52,7 @@
         let overAnimation = false;
         animation.onmouseover = () => overAnimation = true;
         animation.onmouseout = () => overAnimation = false;
+        animation.onclick = () => overAnimation = !overAnimation;
 
         const bambiniImage = document.getElementById("bambiniImage");
         const titlesSlides = document.getElementById("titlesSlides");
