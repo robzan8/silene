@@ -56,23 +56,24 @@
         const bambiniImage = document.getElementById("bambiniImage");
         const titlesSlides = document.getElementById("titlesSlides");
         const textSlides = document.getElementById("textSlides");
-        const frameMillis = 5000;
         function doAnimationFrame(n) {
           if (n > 4) {
             return;
           }
           if (overAnimation) {
             // delay frame
-            setTimeout(() => doAnimationFrame(n), frameMillis);
+            setTimeout(() => doAnimationFrame(n), 1000);
             return
           }
           bambiniImage.style.left = -1280*n + "px";
           titlesSlides.style.top = textSlides.style.top = -150*n + "%";
-          if (n > 0) {
-            titlesSlides.style.opacity = textSlides.style.opacity = 0;
-            setTimeout(() => titlesSlides.style.opacity = textSlides.style.opacity = 1, 1500);
+          if (n === 0) {
+            setTimeout(() => doAnimationFrame(n+1), 4000);
+            return;
           }
-          setTimeout(() => doAnimationFrame(n+1), frameMillis);
+          titlesSlides.style.opacity = textSlides.style.opacity = 0;
+          setTimeout(() => titlesSlides.style.opacity = textSlides.style.opacity = 1, 1500);
+          setTimeout(() => doAnimationFrame(n+1), 6000);
         }
         doAnimationFrame(0);
       }
