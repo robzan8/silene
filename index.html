@@ -50,9 +50,12 @@
 
         const animation = document.getElementById("animation");
         let overAnimation = false;
-        animation.onmouseover = () => overAnimation = true;
-        animation.onmouseout = () => overAnimation = false;
-        animation.onclick = () => overAnimation = !overAnimation;
+        if (window.innerWidth > 800) { // desktop
+          animation.onmouseover = () => overAnimation = true;
+          animation.onmouseout = () => overAnimation = false;
+        } else { // mobile
+          animation.onclick = () => overAnimation = !overAnimation;
+        }
 
         const bambiniImage = document.getElementById("bambiniImage");
         const titlesSlides = document.getElementById("titlesSlides");
