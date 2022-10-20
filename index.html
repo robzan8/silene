@@ -72,12 +72,12 @@
           bambiniImage.style.left = -1280*n + "px";
           titlesSlides.style.top = textSlides.style.top = -150*n + "%";
           if (n === 0) {
-            setTimeout(() => doAnimationFrame(n+1), 4000);
+            setTimeout(() => doAnimationFrame(n+1), 3000);
             return;
           }
           titlesSlides.style.opacity = textSlides.style.opacity = 0;
           setTimeout(() => titlesSlides.style.opacity = textSlides.style.opacity = 1, 1500);
-          setTimeout(() => doAnimationFrame(n+1), 6000);
+          setTimeout(() => doAnimationFrame(n+1), 5000);
         }
         doAnimationFrame(0);
       }
