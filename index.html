@@ -61,9 +61,6 @@
         const titlesSlides = document.getElementById("titlesSlides");
         const textSlides = document.getElementById("textSlides");
         function doAnimationFrame(n) {
-          if (n > 4) {
-            return;
-          }
           if (overAnimation) {
             // delay frame
             setTimeout(() => doAnimationFrame(n), 1000);
@@ -71,15 +68,30 @@
           }
           bambiniImage.style.left = -1280*n + "px";
           titlesSlides.style.top = textSlides.style.top = -150*n + "%";
-          if (n === 0) {
-            setTimeout(() => doAnimationFrame(n+1), 3000);
-            return;
-          }
           titlesSlides.style.opacity = textSlides.style.opacity = 0;
           setTimeout(() => titlesSlides.style.opacity = textSlides.style.opacity = 1, 1500);
-          setTimeout(() => doAnimationFrame(n+1), 5000);
+          if (n < 5) {
+            setTimeout(() => doAnimationFrame(n+1), 5000);
+            return;
+          }
+          // n === 5, animation is looping, reset state to frame 0:
+          setTimeout(() => {
+            bambiniImage.style.transitionDuration = "0s";
+            titlesSlides.style.transitionDuration = "0s";
+            textSlides.style.transitionDuration = "0s";
+          }, 2300);
+          setTimeout(() => {
+            bambiniImage.style.left = "0";
+            titlesSlides.style.top = textSlides.style.top = "0";
+          }, 2500);
+          setTimeout(() => {
+            bambiniImage.style.transitionDuration = null;
+            titlesSlides.style.transitionDuration = null;
+            textSlides.style.transitionDuration = null;
+          }, 2700);
+          setTimeout(() => doAnimationFrame(1), 5000);
         }
-        doAnimationFrame(0);
+        setTimeout(() => doAnimationFrame(1), 3000);
       }
     </script>
 
@@ -158,6 +170,17 @@
               ricerca.
             </p>
           </div>
+          <div class="content-pad">
+            <h1>Ideas for <span class="care">Care</span></h1>
+            <p>
+              La Fondazione Silene Ideas for CARE sostiene l'innovazione attraverso la realizzazione di nuovi modelli
+              di assistenza e cura che si integrano con attività e progetti medico assistenziali a supporto
+              di aree geografiche di differente complessità economico-sociale. La mission della Fondazione consiste
+              nella programmazione di attività che, integrando gli aspetti educazionale e assistenziale,
+              favoriscano la realizzazione di progetti duraturi e integrati nel territorio. Silene incardina le sue idee
+              e i suoi progetti su quattro pilastri: <b>Collaborazione, Assistenza, Ricerca e Educazione</b>.
+            </p>
+          </div>
         </div>
 
         <div id="textSlides">
@@ -211,6 +234,17 @@
               finanzierà il percorso formativo di giovani ricercatori e individuerà e promuoverà collaborazioni per il
               superamento di barriere e frontiere puntando sempre alla diffusione della conoscenza e dei risultati di
               ricerca.
+            </p>
+          </div>
+          <div class="content-pad">
+            <h1>Ideas for <span class="care">Care</span></h1>
+            <p>
+              La Fondazione Silene Ideas for CARE sostiene l'innovazione attraverso la realizzazione di nuovi modelli
+              di assistenza e cura che si integrano con attività e progetti medico assistenziali a supporto
+              di aree geografiche di differente complessità economico-sociale. La mission della Fondazione consiste
+              nella programmazione di attività che, integrando gli aspetti educazionale e assistenziale,
+              favoriscano la realizzazione di progetti duraturi e integrati nel territorio. Silene incardina le sue idee
+              e i suoi progetti su quattro pilastri: <b>Collaborazione, Assistenza, Ricerca e Educazione</b>.
             </p>
           </div>
         </div>
