@@ -67,6 +67,11 @@ nav a {
 	color: #29235c;
 }
 
+nav a:active {
+	font-weight: bold;
+	color: #c42a87;
+}
+
 header nav a {
 	margin-left: 50px;
 }
